@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "@/assets/book.ico";
 import { loadStaticPaths } from "next/dist/server/dev/static-paths-worker";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -58,7 +59,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link href="/books">Books</Link>
             </li>
             <li>
               <details>
