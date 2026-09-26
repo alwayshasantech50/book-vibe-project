@@ -1,3 +1,5 @@
+import ReadButton from "@/components/bookDetails/ReadButton";
+import WishListButton from "@/components/bookDetails/WishListButton";
 import { IBook } from "@/type/books.type";
 import Image from "next/image";
 import React from "react";
@@ -132,13 +134,9 @@ return (
 
         {/* Buttons */}
         <div className="card-actions mt-7">
-          <button className="btn btn-success text-white px-8">
-            Read Now
-          </button>
+          <ReadButton book ={book} />
 
-          <button className="btn btn-outline btn-success px-8">
-            Add to Wishlist
-          </button>
+          <WishListButton book= {book} />
         </div>
 
       </div>
